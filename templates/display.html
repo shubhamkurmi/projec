@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#008b8b">
+<table border="1">
+    <tr>
+        <th>Pid</th>
+        <th>Pname</th>
+        <th>Pcost</th>
+        <th>Pmdt</th>
+        <th>Pexdt</th>
+    </tr>
+    {%for rec in records%}
+    <tr>
+        <td>{{ rec.pid }}</td>
+        <td>{{ rec.pname }}</td>
+        <td>{{ rec.pcost }}</td>
+        <td>{{ rec.pmdt }}</td>
+        <td>{{ rec.pexdt }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+<a href="/dbapp">Click here to insert another product</a>
+
+</body>
+</html>
